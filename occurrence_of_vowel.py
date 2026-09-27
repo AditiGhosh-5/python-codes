@@ -1,0 +1,23 @@
+def count_each_vowel(text):
+    a = e = i = o = u = 0
+
+    for ch in text.lower():
+        if ch == 'a':
+            a += 1
+        elif ch == 'e':
+            e += 1
+        elif ch == 'i':
+            i += 1
+        elif ch == 'o':
+            o += 1
+        elif ch == 'u':
+            u += 1
+
+    print("a =", a)
+    print("e =", e)
+    print("i =", i)
+    print("o =", o)
+    print("u =", u)
+
+text = input("Enter text: ")
+count_each_vowel(text)
